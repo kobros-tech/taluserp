@@ -8,6 +8,7 @@
     "license": "AGPL-3",
     "author": "KOBROS-TECH LTD",
     "maintainer": "kobros-tech",
+    "website": "https://github.com/kobros-tech/taluserp",
     "summary": "Prevent stock move consolidation per operation type",
     "depends": [
         "stock",

@@ -31,6 +31,18 @@ repos:
         language: fail
         files: '[a-zA-Z0-9_]*/i18n/en\.po$'
 
+  - repo: https://github.com/oca/maintainer-tools
+    rev: bf9ecb9938b6a5deca0ff3d870fbd3f33341fded
+    hooks:
+      - id: oca-gen-addon-readme
+        args:
+          - --addons-dir=.
+          - --branch=18.0
+          - --org-name=kobros-tech
+          - --repo-name=taluserp
+          - --if-source-changed
+          - --keep-source-digest
+
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
