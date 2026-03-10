@@ -15,7 +15,7 @@ exclude: |
 
 default_language_version:
   python: python3
-  node: "22.9.0"
+  node: '22.9.0'
 
 repos:
   - repo: local
@@ -40,7 +40,7 @@ repos:
         exclude: /README\.rst$|\.pot?$
       - id: debug-statements
       - id: fix-encoding-pragma
-        args: ["--remove"]
+        args: ['--remove']
       - id: check-case-conflict
       - id: check-docstring-first
       - id: check-executables-have-shebangs
@@ -49,7 +49,7 @@ repos:
       - id: check-symlinks
       - id: check-xml
       - id: mixed-line-ending
-        args: ["--fix=lf"]
+        args: ['--fix=lf']
 
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.6.8
@@ -73,18 +73,9 @@ repos:
           - --rcfile=.pylintrc-mandatory
         verbose: true
 
-  - repo: local
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v3.1.0
     hooks:
       - id: prettier
-        name: prettier (with plugin-xml)
-        entry: prettier
-        args:
-          - --write
-          - --list-different
-          - --ignore-unknown
-        types: [text]
-        files: \.(css|htm|html|js|json|jsx|less|md|scss|toml|ts|xml|yaml|yml)$
-        language: node
-        additional_dependencies:
-          - "prettier@3.3.3"
-          - "@prettier/plugin-xml@3.4.1"
+        types_or: [javascript, yaml, json, markdown, xml]
+        exclude: readme/.*\.(rst|md)$

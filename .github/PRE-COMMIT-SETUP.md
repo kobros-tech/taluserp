@@ -4,10 +4,10 @@ This repository uses [pre-commit](https://pre-commit.com/) to run automated chec
 
 ## Installation
 
-### 1. Install pre-commit
+### 1. Install development dependencies
 
 ```bash
-pip install pre-commit
+pip install -r requirements-dev.txt
 ```
 
 ### 2. Install the git hooks

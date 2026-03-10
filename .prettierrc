@@ -2,10 +2,8 @@
   "singleQuote": true,
   "trailingComma": "es5",
   "bracketSpacing": true,
-  "printWidth": 100,
+  "printWidth": 88,
   "tabWidth": 2,
   "useTabs": false,
-  "endOfLine": "lf",
-  "plugins": ["@prettier/plugin-xml"],
-  "xmlWhitespaceSensitivity": "ignore"
+  "endOfLine": "lf"
 }
