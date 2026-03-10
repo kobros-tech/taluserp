@@ -1,0 +1,27 @@
+# Dependencies
+node_modules
+vendor
+__pycache__
+
+# Build directories
+build
+dist
+*.egg-info
+
+# Version control
+.git
+
+# Environment
+.venv
+venv
+
+# Pre-commit cache
+.pre-commit
+
+# Python cache
+*.pyc
+*.pyo
+*.egg
+
+# Migrations
+migrations

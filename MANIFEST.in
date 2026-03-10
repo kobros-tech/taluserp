@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+recursive-include stock_picking_prevent_consolidation *.py
+recursive-include stock_picking_prevent_consolidation *.xml
+recursive-include stock_picking_prevent_consolidation *.txt
+recursive-include readme *.md

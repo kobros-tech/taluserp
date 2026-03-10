@@ -1,0 +1,4 @@
+# Ruff configuration is in .ruff.toml
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
