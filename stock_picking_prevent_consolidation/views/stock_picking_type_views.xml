@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+  <data>
+    <!-- Stock Picking Type Form View -->
+    <record id="stock_picking_type_form_prevent_consolidation" model="ir.ui.view">
+      <field name="name">stock.picking.type.form.prevent.consolidation</field>
+      <field name="model">stock.picking.type</field>
+      <field name="inherit_id" ref="stock.view_picking_type_form" />
+      <field name="arch" type="xml">
+        <xpath expr="//group[@name='second']" position="inside">
+          <group name="group_consolidation_settings" string="Move Consolidation">
+            <field name="prevent_consolidation" />
+          </group>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>
